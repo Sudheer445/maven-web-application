@@ -4,24 +4,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AbhijitTechnologies- Home Page</title>
-<link href="images/mithunlogo.jpg" rel="icon">
+<title>Welcome to- Home Page</title>
+<link href="images/20190610_182425.jpg" rel="icon">
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Abhijit Technologies.</h1>
-<h1 align="center">Very Good Training center for DevOps with AWS in Maratha Halli and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
+<h1 align="center">Welcome to Abhijit Github</h1>
+<h1 align="center">This is Website for you</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mithunlogo.jpg" alt="" width="50">
-		<img src="images/20190610_182425.jpg" alt="400" width="300">
+		<img src="images/20190610_182425.jpg" alt="600" width="400">
 	</span>
 	<span style="font-weight: bold;">
 		Abhijit Technologies, 
-		Martha Halli, Above ICICI Bank, Beside Meghana Foods,
-		Bangalore.
-		+91-9980923226,
+		Mithun Technology,Marathahalli
 		<br>
 		<a href="mailto:devopstrainingblr@gmail.com">Mail to Abhijit Technologies</a>
 	</span>
