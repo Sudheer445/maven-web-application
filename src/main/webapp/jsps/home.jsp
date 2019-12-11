@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to PULP de Fiesta</h1>
+<h1 align="center">Welcome to Pulp de Fiesta</h1>
 <h1 align="center">PULP is one of the best JUICE corner in Guwahati,Assam</h1>
 <hr>
 <div style="text-align: center;">
