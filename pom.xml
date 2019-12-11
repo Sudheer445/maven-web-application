@@ -22,8 +22,8 @@
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
 		<sonar.host.url>http://13.127.5.175:9000/</sonar.host.url>
-		<sonar.login>7c9ff8642ebb7edd1c40b1c3e65162136d35ac6e</sonar.login>
-		<!--<sonar.password>Spiderman@1234</sonar.password>-->
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -104,7 +104,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.233.252.162:8081/repository/demo-snapshot/</url>
+	      <url>http://13.233.8.146:8081/repository/demo-release/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
