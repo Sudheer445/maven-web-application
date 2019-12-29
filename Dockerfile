@@ -1,4 +1,4 @@
-FROM ubuntu:image
+FROM ubuntu
 RUN sudo apt-get update
 RUN sudo apt-get upgrade
 RUN sudo apt-get install openjdk-8-jdk -y
