@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get upgrade
+RUN apt-get upgrade -y
 RUN apt-get install openjdk-8-jdk -y
 RUN  apt install wget -y
 WORKDIR cd /opt/
