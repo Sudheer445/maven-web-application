@@ -8,6 +8,6 @@ RUN  wget http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.50/bin/apache-tomc
 RUN apt install unzip -y
 RUN unzip apache-tomcat-8.5.50.zipapache-tomcat-8.5.50
 RUN apt-get update
-COPY com/mt/maven-web-application/2.1.1/maven-web-application-2.1.1.war /opt/apache-tomcat-8.5.50/webapp/
+COPY /var/lib/jenkins/workspace/mrinmoy@3/target/maven-web-application.war /opt/apache-tomcat-8.5.50/webapp/
 EXPOSE 8080
 CMD /opt/apache-tomcat-8.5.50/bin/catalina.sh run
