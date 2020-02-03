@@ -98,7 +98,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.233.225.120:8081/repository/Practice1_release/</url>
+	      <url>http://13.233.86.92:8081/repository/Practice1_release/</url>
 	    </repository>
 	  <!--  
 	    <snapshotRepository>
