@@ -13,4 +13,5 @@ FROM abhijitkalita/ubuntu1
 ADD target/maven-web-application.war /opt/apache-tomcat-8.5.50/webapps/
 EXPOSE 8080
 WORKDIR cd /opt/apache-tomcat-8.5.50/bin
-ENTRYPOINT ("catalina.sh","run")
+CMD ["catalina.sh","run"]
+#ENTRYPOINT ["catalina.sh","run"]
