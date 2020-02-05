@@ -12,6 +12,7 @@ FROM abhijitkalita/ubuntu1
 #RUN cp /var/lib/jenkins/workspace/Demo1_Pipeline/target/*.war /opt/apache-tomcat-8.5.50/webapp/
 ADD target/maven-web-application.war /opt/apache-tomcat-8.5.50/webapps/
 EXPOSE 8080
-#WORKDIR cd /opt/apache-tomcat-8.5.50/bin
-CMD ["/opt/apache-tomcat-8.5.50/bin/catalina.sh","run"]
+WORKDIR cd /opt/apache-tomcat-8.5.50/bin
+CMD ["catalina.sh","run"]
+#CMD ["/opt/apache-tomcat-8.5.50/bin/catalina.sh", "run"]
 #ENTRYPOINT ["catalina.sh","run"]
