@@ -12,4 +12,4 @@ RUN apt-get upgrade -y
 ADD target/maven-web-application.war /opt/apache-tomcat-8.5.50/webapp/
 EXPOSE 8080
 WORKDIR cd /opt/apache-tomcat-8.5.50/bin
-ENTRYPOINT ("sh","catalina.sh","run")
+ENTRYPOINT ("catalina.sh","run")
