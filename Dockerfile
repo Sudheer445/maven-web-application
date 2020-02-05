@@ -11,7 +11,7 @@ FROM abhijitkalita/ubuntu1
 #RUN apt-get upgrade -y
 #RUN cp /var/lib/jenkins/workspace/Demo1_Pipeline/target/*.war /opt/apache-tomcat-8.5.50/webapp/
 ADD target/maven-web-application.war /opt/apache-tomcat-8.5.50/webapps/
-RUN 755 -R /opt/apache-tomcat-8.5.50 
+RUN chmod 755 -R /opt/apache-tomcat-8.5.50 
 EXPOSE 8080
 #WORKDIR cd /opt/apache-tomcat-8.5.50/bin
 CMD ["/opt/apache-tomcat-8.5.50/bin/catalina.sh","run"]
