@@ -4,16 +4,16 @@ timestamps {
 
 node () {
 
-	stage ('New - Checkout') {
- 	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'bd13ab0f-aac4-460c-87f8-db1dcf13f5d0', url: 'https://github.com/Abhijit-ops/maven-web-application.git']]]) 
+	stage ('Freestyle - Checkout') {
+ 	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'Github', url: 'https://github.com/Abhijit-ops/maven-web-application.git']]]) 
 	}
-	stage ('New - Build') {
+	stage ('Freestyle - Build') {
  			// Maven build step
-	withMaven(maven: 'maven 3.6.3') { 
+	withMaven(maven: 'Maven') { 
  			if(isUnix()) {
- 				sh "mvn clean package " 
+ 				sh "mvn clean package deploy " 
 			} else { 
- 				bat "mvn clean package " 
+ 				bat "mvn clean package deploy " 
 			} 
  		} 
 	}
