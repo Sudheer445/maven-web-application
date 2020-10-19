@@ -18,4 +18,6 @@ EXPOSE 8080
 #WORKDIR cd /opt/apache-tomcat-8.5.50/bin
 #CMD ["catalina.sh","run"]
 #CMD ["/opt/apache-tomcat-8.5.50/bin/catalina.sh", "run"]
+HEALTHCHECK --interval=5m --timeout=3s \
+  CMD curl -f http://localhost/ || exit 1
 ENTRYPOINT ["catalina.sh","run"]
