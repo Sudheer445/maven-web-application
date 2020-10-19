@@ -1,6 +1,6 @@
 #FROM ubuntu
 FROM tomcat
-MAINTAINER Abhijit
+#MAINTAINER Abhijit
 COPY target/maven-web-application.war /usr/local/tomcat/webapps/
 #RUN apt-get update
 #RUN apt-get upgrade -y
