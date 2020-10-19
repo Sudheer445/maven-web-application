@@ -1,5 +1,6 @@
 #FROM ubuntu
-FROM abhijitkalita/ubuntu1
+FROM tomcat
+COPY target/maven-web-application.war /usr/local/tomcat/webapps/
 #RUN apt-get update
 #RUN apt-get upgrade -y
 #RUN apt-get install openjdk-8-jdk -y
@@ -10,8 +11,8 @@ FROM abhijitkalita/ubuntu1
 #RUN unzip apache-tomcat-8.5.50.zip
 #RUN apt-get upgrade -y
 #RUN cp /var/lib/jenkins/workspace/Demo1_Pipeline/target/*.war /opt/apache-tomcat-8.5.50/webapp/
-ADD target/maven-web-application.war /opt/apache-tomcat-8.5.50/webapps/
-RUN chmod 755 -R /opt/apache-tomcat-8.5.50 
+#ADD target/maven-web-application.war /opt/apache-tomcat-8.5.50/webapps/
+#RUN chmod 755 -R /opt/apache-tomcat-8.5.50 
 EXPOSE 8080
 #WORKDIR cd /opt/apache-tomcat-8.5.50/bin
 CMD ["/opt/apache-tomcat-8.5.50/bin/catalina.sh","run"]
