@@ -17,4 +17,4 @@ EXPOSE 8080
 #WORKDIR cd /opt/apache-tomcat-8.5.50/bin
 CMD ["sh","catalina.sh","run"]
 #CMD ["/opt/apache-tomcat-8.5.50/bin/catalina.sh", "run"]
-ENTRYPOINT ["catalina.sh","run"]
+#ENTRYPOINT ["catalina.sh","run"]
