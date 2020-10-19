@@ -16,6 +16,6 @@ COPY target/maven-web-application.war /usr/local/tomcat/webapps/
 #RUN chmod 755 -R /opt/apache-tomcat-8.5.50 
 EXPOSE 8080
 #WORKDIR cd /opt/apache-tomcat-8.5.50/bin
-CMD ["catalina.sh","run"]
+#CMD ["catalina.sh","run"]
 #CMD ["/opt/apache-tomcat-8.5.50/bin/catalina.sh", "run"]
-#ENTRYPOINT ["catalina.sh","run"]
+ENTRYPOINT ["catalina.sh","run"]
