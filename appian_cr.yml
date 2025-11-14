@@ -10,7 +10,7 @@
    imagePullSecrets: [] # []string
      # - regcred
    # USER ACTION REQUIRED - Update to the full version of Low code platform that Appian runs on
-   version: 25.3.1.1
+   version: 25.3.2.1
    k3LicSecretName: k3lic
    k4LicSecretName: k4lic
    appianLicConfigMapName: appian-lic
@@ -35,7 +35,7 @@
        resources:
          requests:
            # Configure based on your expected Zookeeper storage needs
-           storage: 5Gi
+           storage: 4Gi
      env: # []corev1.EnvVar
        # https://docs.appian.com/suite/help/latest/k8s/resource-requests-and-limits.html#zookeeper
        - name: ZK_HEAP_MIN
